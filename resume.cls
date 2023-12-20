@@ -25,10 +25,10 @@
 % Colors
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{172a45}
-\definecolor{title}{HTML}{1f77e2}
 \definecolor{primary}{HTML}{172a45}
-\definecolor{headings}{HTML}{606a86}
 \definecolor{subheadings}{HTML}{172a45}
+\definecolor{title}{HTML}{1f77e2}
+\definecolor{headings}{HTML}{606a86}
 
 % Fonts
 \def \pathtitlefont {fonts/sourceserifpro/} 
@@ -120,13 +120,13 @@ Last Updated on \today
 \color{date}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1 \\} \normalfont}
 
 %Contact Line
-\newcommand{\contactline}[5]{\begingroup
+\newcommand{\contactline}[3]{\begingroup
 \setbox0=\hbox{
 \faCode \hspace{1pt} {#1}\hspace{0.3cm}
 \faGithub \hspace{1pt} {#2}\hspace{0.3cm}
 % \faGithub \hspace{1pt} {#3}\hspace{0.3cm}
-\faEnvelopeO \hspace{1pt} {#4}\hspace{0.3cm}
-\faPhone \hspace{1pt} {#5}
+\faEnvelopeO \hspace{1pt} {#3}\hspace{0.3cm}
+% \faPhone \hspace{1pt} {#4}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo

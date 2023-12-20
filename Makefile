@@ -13,7 +13,7 @@ RUN := docker run --rm -it \
 	$(IMAGE)
 
 build:
-	$(RUN) xelatex -interaction=nonstopmode Carlos\ Lezama.tex; git clean -Xdf
+	$(RUN) xelatex -interaction=nonstopmode $(file);  git clean -Xdf
 
 clean:
 	docker image prune -f

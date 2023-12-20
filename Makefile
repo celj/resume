@@ -1,9 +1,9 @@
 help:
 	@echo "build - build the resume"
 	@echo "clean - clean up docker images"
+	@echo "help  - print this help message"
 	@echo "image - build the docker image"
 	@echo "shell - run a shell in the docker image"
-	@echo "update - clean, build, and image"
 
 DIR := /app
 IMAGE := resume
